@@ -11,13 +11,6 @@ function renderTimeSlots() {
         if (moment().hour() === i) $(hour).addClass("present");
         else if (moment().hour() > i) $(hour).addClass("past");
         else $(hour).addClass("future");
-
-        //for each hour, check if there is an item in local storage with that hour's key
-        const stored = localStorage.getItem(i);
-        //if there is, it will return true. Then update $(hour)'s value with the saved value
-        if (stored) {
-            $(hour).val(stored);
-        }
     }
 }
 
@@ -52,23 +45,23 @@ $("button").on("click", function () {
     var button = this;
     var sectionID = $(this).parent().attr("id"); //find the section to which this button belongs, and get its id.
     var textArea = $(this).prev().val(); //find the button's text area by finding its previous sibling, then get the corresponding value
-    if (textArea) { //if there is nothing typed, this will return false and nothing will happen
-        localStorage.setItem(sectionID, textArea); // save the contents of the text area to local storage with the key reflecting the hour
-        $(button).empty(); //clear the button icon and add an animated one
-        var icon = $("<i>");
-        icon.addClass("far fa-save fa-spin");
-        $(button).append(icon);
-        var timer = setTimeout(function () {
-            $(button).empty();
-            var icon2 = $("<i>");
-            icon2.addClass("fas fa-check-square");
-            icon2.css("background-color", "white");
-            icon2.css("color", "limegreen");
-            icon2.css("padding-left", "1px");
-            icon2.css("padding-right", "1px");
-            $(button).append(icon2);
-        }, 2000);
-    }
+    // if (textArea) { //if there is nothing typed, this will return false and nothing will happen
+    localStorage.setItem(sectionID, textArea); // save the contents of the text area to local storage with the key reflecting the hour
+    $(button).empty(); //clear the button icon and add an animated one
+    var icon = $("<i>");
+    icon.addClass("far fa-save fa-spin");
+    $(button).append(icon);
+    var timer = setTimeout(function () {
+        $(button).empty();
+        var icon2 = $("<i>");
+        icon2.addClass("fas fa-check-square");
+        icon2.css("background-color", "white");
+        icon2.css("color", "limegreen");
+        icon2.css("padding-left", "1px");
+        icon2.css("padding-right", "1px");
+        $(button).append(icon2);
+    }, 2000);
+    // }
     $(button).prev().attr("data-saved", "true");
 });
 
