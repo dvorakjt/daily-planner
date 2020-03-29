@@ -4,9 +4,9 @@ body {
   line-height: 1;
 }
 
-.container {
+section { /*used display: grid to create columns in each section to help organize the planner */
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+  grid-template-columns: 80px auto auto auto auto auto auto auto auto auto auto auto;
 }
 
 textarea{
@@ -27,21 +27,6 @@ textarea{
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
-}
-
-.description{
-  white-space: pre-wrap;
-}
-
-.time-block{
-  text-align: center;
-  border-radius: 15px;
-}
-
-.row {
-  white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;;
 }
 
 .hour {

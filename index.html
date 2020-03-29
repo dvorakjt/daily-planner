@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="assets/styles/style.css" />
   <script src="https://kit.fontawesome.com/e1ffe7f2ba.js" crossorigin="anonymous"></script>
   <title>Work Day Scheduler</title>
 </head>
@@ -21,66 +21,85 @@
     <p id="currentDay" class="lead"></p>
   </header>
   <div class="container">
+    <!--create a container to wrap the main content-->
 
-    <div class="hour">9:00 AM</div>
-    <textarea id="9">Your Text Here</textarea>
-    <button class="saveBtn" id="9s">
-      <i class="far fa-save"></i>
-    </button>
+    <!--each section corresponds to a row-->
+    <section id="9">
+      <div class="hour">9:00 AM</div>
+      <textarea data-saved="false"></textarea>
+      <button class="saveBtn">
+        <i class="far fa-save"></i>
+      </button>
+    </section>
 
-    <div class="hour">10:00 AM</div>
-    <textarea id="10">Your Text Here</textarea>
-    <button class="saveBtn" id="10s">
-      <i class="far fa-save"></i>
-    </button>
+    <section id="10">
+      <div class="hour">10:00 AM</div>
+      <textarea data-saved="false"></textarea>
+      <button class="saveBtn">
+        <i class="far fa-save"></i>
+      </button>
+    </section>
 
+    <section id="11">
+      <div class="hour">11:00 AM</div>
+      <textarea data-saved="false"></textarea>
+      <button class="saveBtn">
+        <i class="far fa-save"></i>
+      </button>
+    </section>
 
-    <div class="hour">11:00 AM</div>
-    <textarea id="11">Your Text Here</textarea>
-    <button class="saveBtn" id="11s">
-      <i class="far fa-save"></i>
-    </button>
+    <section id="12">
+      <div class="hour">12:00 PM</div>
+      <textarea data-saved="false"></textarea>
+      <button class="saveBtn">
+        <i class="far fa-save"></i>
+      </button>
+    </section>
 
-    <div class="hour">12:00 PM</div>
-    <textarea id="12">Your Text Here</textarea>
-    <button class="saveBtn" id="12s">
-      <i class="far fa-save"></i>
-    </button>
+    <section id="13">
+      <div class="hour">1:00 PM</div>
+      <textarea data-saved="false"></textarea>
+      <button class="saveBtn">
+        <i class="far fa-save"></i>
+      </button>
+    </section>
 
-    <div class="hour">1:00 PM</div>
-    <textarea id="13">Your Text Here</textarea>
-    <button class="saveBtn" id="13s">
-      <i class="far fa-save"></i>
-    </button>
+    <section id="14">
+      <div class="hour">2:00 PM</div>
+      <textarea data-saved="false"></textarea>
+      <button class="saveBtn">
+        <i class="far fa-save"></i>
+      </button>
+    </section>
 
-    <div class="hour">2:00 PM</div>
-    <textarea id="14">Your Text Here</textarea>
-    <button class="saveBtn" id="14s">
-      <i class="far fa-save"></i>
-    </button>
+    <section id="15">
+      <div class="hour">3:00 PM</div>
+      <textarea data-saved="false"></textarea>
+      <button class="saveBtn">
+        <i class="far fa-save"></i>
+      </button>
+    </section>
 
-    <div class="hour">3:00 PM</div>
-    <textarea id="15">Your Text Here</textarea>
-    <button class="saveBtn" id="15s">
-      <i class="far fa-save"></i>
-    </button>
+    <section id="16">
+      <div class="hour">4:00 PM</div>
+      <textarea data-saved="false"></textarea>
+      <button class="saveBtn">
+        <i class="far fa-save"></i>
+      </button>
+    </section>
 
-    <div class="hour">4:00 PM</div>
-    <textarea id="16">Your Text Here</textarea>
-    <button class="saveBtn" id="16s">
-      <i class="far fa-save"></i>
-    </button>
-
-    <div class="hour">5:00 PM</div>
-    <textarea id="17">Your Text Here</textarea>
-    <button class="saveBtn" id="17s">
-      <i class="far fa-save"></i>
-    </button>
+    <section id="17">
+      <div class="hour">5:00 PM</div>
+      <textarea data-saved="false"></textarea>
+      <button class="saveBtn">
+        <i class="far fa-save"></i>
+      </button>
+    </section>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  <script src="script.js"></script>
+  <script src="assets/scripts/script.js"></script>
 </body>
 
 </html>
