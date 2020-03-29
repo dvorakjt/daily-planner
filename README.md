@@ -1,6 +1,6 @@
 # Read Me
 ## Daily Planner
-This repo contains code for a simply daily planner to be used to plan events of the current workday. Please check out the deployed application [here.](https://dvorakjt.github.io/daily-planner/)
+This repo contains code for a simple daily planner to be used to plan events of the current workday. Please check out the deployed application [here.](https://dvorakjt.github.io/daily-planner/)
 ![enter image description here](assets/screenshot.png)
 ## Basic Functionality
 The planner features the following functionality:
